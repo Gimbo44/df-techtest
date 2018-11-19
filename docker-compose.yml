@@ -24,13 +24,3 @@ services:
     links:
       - maria
     command: bash
-
-  maria:
-    image: mariadb:latest
-    restart: always
-    env_file:
-      - .env
-    ports:
-      - "${MYSQL_DATABASE_PORT}:3306"
-    volumes:
-      - /home/arun/mariadb/store/gds-tables:/var/lib/mysql
