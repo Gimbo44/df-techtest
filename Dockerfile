@@ -7,6 +7,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
     php7.2 \
     php7.2-mysql \
     php7.2-xml \
+    php7.2-zip \
     php7.2-mbstring \
     libapache2-mod-php7.2 \
     php7.2-xdebug \
