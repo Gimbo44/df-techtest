@@ -19,4 +19,27 @@ host the project/test it.
 
 To begin:
 
-    1. 
+    1. run ./bin/get-composer.sh
+- This will get your own local copy of composer (makes life easier)
+    
+    
+    2. docker-compose build
+
+- This will build the web/dev containers
+
+
+    3. docker-compose run dev php composer.phar install
+    
+- Will install all dependencies
+
+
+    4. cp .env.dist .env
+
+
+- Initialize the ENV file
+
+
+    5. docker-compose up
+    
+
+    
